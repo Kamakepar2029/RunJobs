@@ -1,1 +1,1 @@
-intitle:“index of” inurl:ftp after:2019
+filetype:env “DB_PASSWORD” after:2018
