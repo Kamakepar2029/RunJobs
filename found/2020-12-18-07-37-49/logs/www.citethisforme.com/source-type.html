@@ -1,0 +1,711 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Anti-flicker snippet  -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',4000,
+  {'GTM-5VRXN6M':true});</script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=p3yenmwItuLEyYX8e9W-BA&gtm_preview=env-2&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T896893');
+  </script>
+  <!-- End Google Tag Manager -->
+  
+
+  <title></title>
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="harvard referencing, harvard referencing generator, apa referencing, apa style, mla style, reference generator, citethisforme, bibliography generator" />
+  <meta name="version" content="352" />
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"1fabaefecb","applicationID":"660339417","transactionName":"NQcDYUAEXxJYUhFfXQxNLGNxSmIOTEMGU0EhDQ9BQApdDVxDSkVdFxACUEYcQQRKVAlTURYLDls=","queueTime":0,"applicationTime":9,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"1fabaefecb",applicationID:"660339417"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="turbolinks-cache-control" content="no-cache">
+  <meta property="og:image" content="http://www.citethisforme.com/Content/images/fb_og.png" />
+  <meta property="og:title" content="Save Time and Improve your Marks with CiteThisForMe, The No. 1 Citation Tool" />
+  <meta property="og:description" content="Automatically reference everything correctly with CiteThisForMe. Save your work forever, build multiple bibliographies, run plagiarism checks, and much more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.citethisforme.com" />
+  <meta property="og:site_name" content="Cite This For Me" />
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@CiteThisForMe">
+  <meta name="twitter:title" content="Cite This For Me: Harvard, APA, MLA Reference Generator">
+  <meta name="twitter:description" content="Create your citations, reference lists and bibliographies automatically using the APA, MLA, Chicago, or Harvard referencing styles. It's fast and free!">
+  <meta name="twitter:image:src" content="http://www.citethisforme.com/content/images/logos/ctfm-svg.svg">
+
+  <meta name="google-signin-client_id" content="968780588470-i89g985udq4advecp103greg4j63rqaj.apps.googleusercontent.com">
+  <meta name="baidu-site-verification" content="A6eAtYCjYF" />
+
+  
+  <link href="//content.citethisforme.com/wp-content/themes/refme/dist/img/icons/meta/favicon-32x32.ico" rel="shortcut icon" />
+  <!-- Standard iPhone -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png?v=2" />
+  <!-- Retina iPhone -->
+  <link rel="apple-touch-icon" sizes="114x114" href="//content.citethisforme.com/wp-content/themes/refme/dist/img/icons/meta/apple-touch-icon-114x114.png" )" />
+  <!-- Standard iPad -->
+  <link rel="apple-touch-icon" sizes="72x72" href="//content.citethisforme.com/wp-content/themes/refme/dist/img/icons/meta/apple-touch-icon-72x72.png" />
+  <!-- Retina iPad -->
+  <link rel="apple-touch-icon" sizes="144x144" href="//content.citethisforme.com/wp-content/themes/refme/dist/img/icons/meta/apple-touch-icon-144x144.png" />
+  <!-- Android 2.2 -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144.png?v=2" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic,600italic,700italic" rel="stylesheet" type="text/css" />
+  <link href="/Content/ctfm2.min.css?v=3" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+     <script src="https://gdpr.studybreakmedia.com/short-circuit.js" type="text/javascript" charset="UTF-8"></script>
+     <script src="https://cdn.cookielaw.org/consent/tcf.stub.js" type="text/javascript" charset="UTF-8"></script>
+     <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" data-domain-script="c817b953-cead-4d84-a448-c64422cfaf41"></script>
+     <script>
+      if(!window.__sbmNoGdpr && !window.OptanonActiveGroups.match(/,prf,/)) {
+         window['ga-disable-UA-17563040-1'] = true
+       } else {
+         window['ga-disable-UA-17563040-1'] = false
+       }
+    </script>
+      <script
+      src="https://cdn.cookielaw.org/opt-out/otCCPAiab.js"
+      type="text/javascript"
+      charSet="UTF-8"
+      ccpa-opt-out-ids="trg,goog,C0005,prf"
+      ccpa-opt-out-geo="all"
+      ccpa-opt-out-lspa="true">
+    </script>
+    <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments);
+    };
+    ga('create', 'UA-17563040-1', 'auto');
+    ga('require', 'GTM-5VRXN6M');
+  </script>
+
+    <!-- Ads -->
+    <script src="//atc-edge.studybreakmedia.com/bundles/production/ctfm/nile-pool-rollout-8-control.js"></script>
+
+  <script src="https://checkout.stripe.com/checkout.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+  <script src="/Scripts/bundling?v=JuTU9QehY7C_y2o0SBiG_H7lbBifLxEa6EkU6sFoI981"></script>
+
+
+  <script type="text/javascript">
+    // new GA
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  </script>
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <!-- Don't show old cookie consent banner when using OneTrust -->
+  <script src="//atc-edge.studybreakmedia.com/gdpr/CTFM-cookie-consent.js" type="text/javascript"></script>
+  
+    <script src="/Scripts/turbolink?v=wPOYi7rKl2oXjWdUYs90_CDO68QDe_ysf8R55RQGH_w1"></script>
+
+  
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T896893&gtm_auth=p3yenmwItuLEyYX8e9W-BA&gtm_preview=env-2&gtm_cookies_win=x"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="fb-root"></div> <!-- needed for facebook btn -->
+  <div class="ui-3">
+    
+
+<div class="ui-3 container vp">
+  <!--for top ads-->
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-7 ads_top_middle">
+
+
+  <div style="width:300px;height:250px;display:inline-block">
+    <div id='D_T1'>
+    </div>
+  </div>
+  <div style="width:300px;height:250px;display:inline-block;margin-left:40px">
+    <div id='D_T2'>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <!--for left ads-->
+    <div class="col-lg-2">
+      <div>
+<div class="sbm-ad">
+  <div id='D_L1'>
+  </div>
+</div>
+      </div>
+    </div>
+    <!--for main page-->
+    <div class="col-lg-7" data-turbolinks-root>
+        <div class="alert-container">
+          
+        </div>
+                <!-- set up ctfm sbm configuration -->
+          <script>
+          window.sbmOptions = {
+              user: {
+                page: 'sourcetype',
+                citationCount: 0
+              }
+            }
+          </script>
+
+    <script>
+            ga('set', 'dimension1', 'not logged in');
+
+            ga('set', 'dimension5', 'sourcetype');
+            ga('set', 'page', window.location.pathname);
+            ga('send', 'pageview');
+    </script>
+
+      <input id="lang" name="lang" type="hidden" value="" />
+      <div class="not-logged-in-log-i">
+          <div>
+            
+Not logged in.            <a data-turbolinks="false" href="/premium/login">Log in</a>
+            or
+            <a data-turbolinks="false" href="/premium?from=create" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Subscriptions&#39;, &#39;Intent to subscribe&#39;, &#39;create&#39; );">create an account</a>
+          </div>
+      </div>
+
+
+<nav class="tabs">
+  <div class="tabs-container">
+    <ul>
+      <li>
+        <div class="dropdown">
+          <a href="javascript:void(0)" data-toggle="dropdown" class="primary">Cite This For Me</a>
+          <div class="dropdown-menu width-1">
+            <a href="/extras/termsofservice" class="btn-small"><b class="d16 documents"></b>Terms of service <span class="tos">Updated</span></a>
+            <a href="http://www.chegg.com" style="float:left; width:188px; text-align: center; padding:10px 0;" target="_new"><img src="/Content/images/chegg.png" style="" /></a>
+          </div>
+        </div>
+      </li>
+      <li>
+          <a href="/" data-tab-for-ribbon="bibliographies" class="selected" data-turbolinks="false">Your Bibliography</a>
+      </li>
+      <li>
+        <a href="/" data-tab-for-ribbon="extras" data-turbolinks="false" >Extras</a>
+      </li>
+      <li>
+        <a href="/topic-ideas" class="" data-turbolinks="false">Topic Ideas</a>
+      </li>
+      <li>
+        <a href="/guides" data-tab-for-ribbon="guides" data-turbolinks="false" >Citation Guides</a>
+      </li>
+        <li>
+          <a onclick="ga('send', 'event', 'Subscriptions', 'Intent to subscribe', 'tab');" href="/premium?from=tab" class="" data-turbolinks="false">create an account</a>
+        </li>
+
+    </ul>
+  </div>
+  <div class="align_pri_supp">
+    <ul class="right-toolbar ">
+      <li>
+        <a href="http://support.citethisforme.com/?Website=External">Support</a>
+      </li>
+    </ul>
+  </div>
+  <div style="clear:both;"></div>
+</nav>
+
+
+      <div class="ribbon" data-ribbon="extras" style="display: none;">
+        <div class="ribbon-container">
+          <div class="ribbon-group chrome">
+            <a href="https://chrome.google.com/webstore/detail/cite-this-for-me-web-cite/nnnmhgkokpalnmbeighfomegjfkklkle" target="_blank" class="btn-large">
+              <strong class="d30 chrome"></strong>
+              <span>Chrome<br/>Add-on</span>
+            </a>
+            <div class="legend">
+              Add-on
+            </div>
+          </div>
+          <div class="ribbon-group">
+            <a href="//www.citethisforme.com/blog" class="btn-large" target="_new">
+              <strong class="d30 text"></strong>
+              <span>Our Blog</span>
+            </a>
+
+            <div class="legend">
+              Resources
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ribbon" data-ribbon="guides" style="display: none;">
+        <div class="ribbon-container">
+          <div class="ribbon-group chrome">
+            <a href="/us/citation-generator/apa" class="last-apa btn-large" data-turbolinks="false">
+              <strong class="d30 report-add"></strong>
+              <span>APA Format</span>
+            </a>
+            <div class="legend">
+              APA Format
+            </div>
+          </div>
+          <div class="ribbon-group chrome">
+            <a href="/us/citation-generator/mla" class="last-apa btn-large" data-turbolinks="false">
+              <strong class="d30 report-add"></strong>
+              <span>MLA Format</span>
+            </a>
+            <div class="legend">
+              MLA Format
+            </div>
+          </div>
+          <div class="ribbon-group chrome">
+            <a href="/uk/referencing-generator/harvard" class="last-apa btn-large" data-turbolinks="false">
+              <strong class="d30 report-add"></strong>
+              <span>Harvard Referencing</span>
+            </a>
+            <div class="legend">
+              Harvard Referencing
+            </div>
+          </div>
+          <div class="ribbon-group">
+            <a href="/guides" class="btn-large">
+              <strong class="d30 light_on"></strong>
+              <span>Style<br/>Guides</span>
+            </a>
+            <div class="legend">
+              Learn
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+<div class="breadcrumb">
+  <a class="back" onclick="showBackBibliographyConfirmationMessage()"><i class="fa fa-chevron-left"></i> Back to bibliography</a>
+  
+  <div class="pull-right">
+    <span>Citing</span><span class="style-text"> Harvard</span>
+  </div>
+</div>
+<div class="card">
+  <div class="btn-placholder" style="margin-bottom: 30px">
+    <h3>Choose your source type</h3>
+  </div>
+  <div class="btn-placholder">
+    <div class="source-holder">
+      <a href="/cite/website">
+        <img src="/Content/images/CTFM-Computer.svg" style="height: 90px; clear: both;" />
+        <span class="button btn-md btn-blue">Website</span>
+      </a>
+    </div>
+    <div class="source-holder">
+      <a href="/cite/journal">
+        <img src="/Content/images/CTFM-Journal.svg" style="height: 90px; clear: both;" />
+        <span class="button btn-md btn-blue">Journal</span>
+      </a>
+    </div>
+    <div class="source-holder">
+      <a href="/cite/book">
+        <img src="/Content/images/CTFM-Book.svg" style="height: 90px; clear: both;" />
+        <span class="button btn-md btn-blue">Book</span>
+      </a>
+    </div>
+    <div class="source-holder">
+      <div class="dropdown">
+        <a href="javascript:void(0)" data-toggle="dropdown">
+          <img src="/Content/images/CTFM-Gear.svg" style="height: 90px; clear: both;" />
+          <span class="button btn-md btn-blue">More</span>
+<div class="dropdown-menu width-3">
+    <header>
+        More reference types
+    </header>
+
+        <div class="btn-group">
+                <a href="/cite/archive-material" class="btn-small js-load-via-modal">
+                    <strong class="d16 archive-material"></strong>
+                    Archive material
+                </a>
+                <a href="/cite/artwork" class="btn-small js-load-via-modal">
+                    <strong class="d16 artwork"></strong>
+                    Artwork
+                </a>
+                <a href="/cite/blog" class="btn-small js-load-via-modal">
+                    <strong class="d16 blog"></strong>
+                    Blog
+                </a>
+                <a href="/cite/book" class="btn-small js-load-via-modal">
+                    <strong class="d16 book"></strong>
+                    Book
+                </a>
+                <a href="/cite/broadcast" class="btn-small js-load-via-modal">
+                    <strong class="d16 broadcast"></strong>
+                    Broadcast
+                </a>
+                <a href="/cite/chapter-of-an-edited-book" class="btn-small js-load-via-modal">
+                    <strong class="d16 chapter-of-an-edited-book"></strong>
+                    Chapter of an edited book
+                </a>
+                <a href="/cite/conference-proceedings" class="btn-small js-load-via-modal">
+                    <strong class="d16 conference-proceedings"></strong>
+                    Conference proceedings
+                </a>
+                <a href="/cite/court-case" class="btn-small js-load-via-modal">
+                    <strong class="d16 court-case"></strong>
+                    Court case
+                </a>
+                <a href="/cite/dictionary-entry" class="btn-small js-load-via-modal">
+                    <strong class="d16 dictionary-entry"></strong>
+                    Dictionary entry
+                </a>
+                <a href="/cite/dissertation" class="btn-small js-load-via-modal">
+                    <strong class="d16 dissertation"></strong>
+                    Dissertation
+                </a>
+                <a href="/cite/dvd-video-or-film" class="btn-small js-load-via-modal">
+                    <strong class="d16 dvd-video-or-film"></strong>
+                    DVD, video, or film
+                </a>
+        </div>
+        <div class="btn-group">
+                <a href="/cite/ebook" class="btn-small js-load-via-modal">
+                    <strong class="d16 ebook"></strong>
+                    E-book or PDF
+                </a>
+                <a href="/cite/edited-book" class="btn-small js-load-via-modal">
+                    <strong class="d16 edited-book"></strong>
+                    Edited book
+                </a>
+                <a href="/cite/email" class="btn-small js-load-via-modal">
+                    <strong class="d16 email"></strong>
+                    Email
+                </a>
+                <a href="/cite/encyclopedia-article" class="btn-small js-load-via-modal">
+                    <strong class="d16 encyclopedia-article"></strong>
+                    Encyclopedia article
+                </a>
+                <a href="/cite/government-publication" class="btn-small js-load-via-modal">
+                    <strong class="d16 government-publication"></strong>
+                    Government publication
+                </a>
+                <a href="/cite/interview" class="btn-small js-load-via-modal">
+                    <strong class="d16 interview"></strong>
+                    Interview
+                </a>
+                <a href="/cite/journal" class="btn-small js-load-via-modal">
+                    <strong class="d16 journal"></strong>
+                    Journal
+                </a>
+                <a href="/cite/legislation" class="btn-small js-load-via-modal">
+                    <strong class="d16 legislation"></strong>
+                    Legislation
+                </a>
+                <a href="/cite/magazine" class="btn-small js-load-via-modal">
+                    <strong class="d16 magazine"></strong>
+                    Magazine
+                </a>
+                <a href="/cite/music" class="btn-small js-load-via-modal">
+                    <strong class="d16 music"></strong>
+                    Music or recording
+                </a>
+                <a href="/cite/newspaper" class="btn-small js-load-via-modal">
+                    <strong class="d16 newspaper"></strong>
+                    Newspaper
+                </a>
+        </div>
+        <div class="btn-group">
+                <a href="/cite/online-image-or-video" class="btn-small js-load-via-modal">
+                    <strong class="d16 online-image-or-video"></strong>
+                    Online image or video
+                </a>
+                <a href="/cite/patent" class="btn-small js-load-via-modal">
+                    <strong class="d16 patent"></strong>
+                    Patent
+                </a>
+                <a href="/cite/podcast" class="btn-small js-load-via-modal">
+                    <strong class="d16 podcast"></strong>
+                    Podcast
+                </a>
+                <a href="/cite/presentation" class="btn-small js-load-via-modal">
+                    <strong class="d16 presentation"></strong>
+                    Presentation or lecture
+                </a>
+                <a href="/cite/press-release" class="btn-small js-load-via-modal">
+                    <strong class="d16 press-release"></strong>
+                    Press release
+                </a>
+                <a href="/cite/religious-text" class="btn-small js-load-via-modal">
+                    <strong class="d16 religious-text"></strong>
+                    Religious text
+                </a>
+                <a href="/cite/report" class="btn-small js-load-via-modal">
+                    <strong class="d16 report"></strong>
+                    Report
+                </a>
+                <a href="/cite/software" class="btn-small js-load-via-modal">
+                    <strong class="d16 software"></strong>
+                    Software
+                </a>
+                <a href="/cite/website" class="btn-small js-load-via-modal">
+                    <strong class="d16 website"></strong>
+                    Website
+                </a>
+        </div>
+</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card tile">
+  
+  <div class="tile-left">
+    <h2>Cite smarter, Worry less with Cite This For Me Premium</h2>
+    <p>Upgrade to save your work, check for plagiarism, and more!</p>
+    <a data-turbolinks="false" href="/premium" onclick="ga('send', 'event', 'Subscriptions', 'Intent to subscribe', 'card-cta');">Learn More</a>
+  </div>
+  <div class="tile-right">
+    <img src="/Content/images/ctfm-star-books.svg"/>
+  </div>
+</div>
+<div class="ctfm-description">
+  <div class="bottom-content-heading">
+    <p>
+      Is your source credible?
+    </p>
+    <p>
+      Don’t forget to consider these factors.
+    </p>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Purpose : Reason the source exists
+    </h6>
+    <ul>
+      <li>
+        Is the point of the information to inform, persuade, teach, or sell?
+      </li>
+      <li>
+        Do the authors/publishers make their intentions clear?
+      </li>
+      <li>
+        Does the information appear to be fact or opinion?
+      </li>
+      <li>
+        Does the point of view seem impartial? Do they identify counter-arguments?
+      </li>
+    </ul>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Authority - Author:Source of the information
+    </h6>
+    <ul>
+      <li>
+        Who is the author? What are their credentials or qualifications?
+      </li>
+      <li>
+        What makes the author qualified to write on this topic?
+      </li>
+      <li>
+        Is there clearly defined contact information for the author?
+      </li>
+    </ul>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Authority - Publisher:Source of the information
+    </h6>
+    <ul>
+      <li>
+        Who is the publisher? Is it a non-profit, government agency, or organization? How might this affect their point of view?
+      </li>
+      <li>
+        What makes the publisher qualified to generate works on this subject?
+      </li>
+      <li>
+        What can the URL tell you about the publisher? For instance, .gov may signify that it is a government agency.
+      </li>
+    </ul>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Accuracy : Reliability and truthfulness of the content
+    </h6>
+    <ul>
+      <li>
+        Where does the information come from?
+      </li>
+      <li>
+        Can the information presented be verified? Is it supported by evidence that is clearly cited?
+      </li>
+      <li>
+        Does the language used seem free of emotion, and does the work seem impartial and objective?
+      </li>
+      <li>
+        Are there any spelling or grammatical errors? If an online source, are all links working?
+      </li>
+      <li>
+        If it was reproduced, who edited/reproduced it? Where was the information originally published?
+      </li>
+      <li>
+        How original are the ideas presented in the work? Do they seem to be common knowledge?
+      </li>
+    </ul>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Relevance : Importance of the information to your topic
+    </h6>
+    <ul>
+      <li>
+        Does the information relate to your topic, or answer the question you have presented?
+      </li>
+      <li>
+        Who is the intended audience of the work? Does that audience match with yours?
+      </li>
+      <li>
+        Have you looked at other sources related to this one? Does it seem there are many others on the topic?
+      </li>
+      <li>
+        Are you utilizing the entire source, or just a part of it?
+      </li>
+    </ul>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Currency : Timeliness of the information
+    </h6>
+    <ul>
+      <li>
+        When was the information published? When was it last updated? Does it reflect the most current information available?
+      </li>
+      <li>
+        How does your topic fit in with this source’s publication date? Do you need current information to make your point or do older sources work better?
+      </li>
+    </ul>
+  </div>
+  <div class="autocite-div">
+    <h6>
+      Comprehensiveness
+    </h6>
+    <ul>
+      <li>
+        Does the source present one or multiple viewpoints on your topic?
+      </li>
+      <li>
+        Does the source present a large amount of information on the topic? Or is it short and focused?
+      </li>
+      <li>
+        Are there any points you feel may have been left out, on purpose or accidentally, that affect its comprehensiveness?
+      </li>
+    </ul>
+  </div>
+</div>
+      
+
+      <!-- Author templates for javascript adding -->
+      <div class="input-row double author-template" style="display: none;">
+
+        <label for="First_name:">First name:</label>
+        <input autocomplete="off" id="Authors_guid__Forename" name="Authors[guid].Forename" type="text" value="" />
+        <label for="Last_name:">Last name:</label>
+        <input autocomplete="off" id="Authors_guid__Surname" name="Authors[guid].Surname" type="text" value="" />
+        <aside>
+          <a href="javascript:void(0)" class="js-remove-author-btn" tabindex="-1">
+            <i class="fa fa-times-circle"></i>
+          </a>
+        </aside>
+        <input type="hidden" value="guid" autocomplete="off" name="Authors.index" />
+      </div>
+      <div class="input-row double chapter-author-template" style="display: none;">
+
+        <label for="First_name:">First name:</label>
+        <input autocomplete="off" id="ChapterAuthors_guid__Forename" name="ChapterAuthors[guid].Forename" type="text" value="" />
+        <label for="Last_name:">Last name:</label>
+        <input autocomplete="off" id="ChapterAuthors_guid__Surname" name="ChapterAuthors[guid].Surname" type="text" value="" />
+        <aside>
+          <a href="javascript:void(0)" class="js-remove-author-btn" tabindex="-1">
+            <i class="fa fa-times-circle"></i>
+          </a>
+        </aside>
+        <input type="hidden" value="guid" autocomplete="off" name="ChapterAuthors.index" />
+      </div>
+    </div>
+    <!--for right side ads-->
+    <div class="col-lg-3">
+
+
+  <div class="sbm-ad" style="margin-bottom: 10px;">
+    <div id="D_VID">
+    </div>
+  </div>
+
+<div class="sbm-ad" style="margin-bottom: 10px;">
+  <div id='D_R1'>
+  </div>
+</div>
+
+<div class="sbm-ad" style="margin-bottom:10px;">
+  <div id='D_R2'>
+  </div>
+</div>
+
+  <div class="sbm-ad">
+    <div id='D_R3'>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // this script is here because we only want it to work on pages using this template (the 'app' pages). Other pages (Premium/Topic ideas/Guides) have the tab bar but not the tabs, so this code wouldn't work on them anyway.
+  $(document).ready(function () {
+    // tabs
+    $(document).on('click',
+      '.tabs a[data-tab-for-ribbon]',
+      function (e) {
+        e.preventDefault();
+        $('.ribbon').hide();
+        $('.tabs a').removeClass('selected');
+        var el = $(this);
+        el.addClass('selected');
+        var dataRibbon = el.data('tab-for-ribbon');
+        $('.ribbon[data-ribbon=' + dataRibbon + ']').show();
+      });
+  })
+</script>
+
+
+
+  </div>
+    <div id='B1'></div>
+  <footer class="footer-notice">
+    <div class="card row">
+      <div class="col-lg-2"></div>
+          <div class="col-lg-7" style="padding: 0 60px">
+            <a href="https://www.chegg.com/privacypolicy" style="text-align: left" data-turbolinks="false">Global Privacy Policy</a>
+            <a href="#" class="ot-sdk-show-settings" style="text-align: center" data-turbolinks="false" id="ot-sdk-btn">DO NOT SELL MY INFO</a>
+            <a href="/extras/cookienotice" style="text-align:right;" data-turbolinks="false">Cookie Notice</a>
+          </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </footer>
+</body>
+</html>

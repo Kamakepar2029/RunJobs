@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQ8FWV9TDRABUlFTBAQAX1c=",licenseKey:"04d273ebc4",applicationID:"160135793"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(27),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{l?l-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(28),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(l+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){_++,T=g.hash,this[u]=y.now()}function o(){_--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,l="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),S=t("ee"),C=S.get("tracer");t(16),y.features.spa=!0;var T,_=0;S.on(u,r),S.on(p,r),S.on(d,o),S.on(l,o),S.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+c]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,_>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(28),a=t(27);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,p=c.Response,l=c.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),c=i(a),s=t(27),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(24),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<p;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(27),c=t(28),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),p=t("loader"),l=t(26),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],25:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(27),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(22),c=t("handle"),s=t(27),f=t("ee"),u=t(25),d=window,p=d.document,l="addEventListener",h="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1184.min.js"},y=m&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:y,userAgent:u};t(19),t(23),p[l]?(p[l]("DOMContentLoaded",i,!1),d[l]("load",r,!1)):(p[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(28),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);</script>
+<link rel="shortlink" href="https://www.medicare.gov/" />
+<link rel="canonical" href="https://www.medicare.gov/" />
+<meta name="google-site-verification" content="jtnyspgTt8MtNgCLyPGvyHztLyv2dsxLRgBXSw5Jui8" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/sites/default/files/favicon-mgov.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.medicare.gov/index" />
+<link rel="revision" href="https://www.medicare.gov/index" />
+
+    <title>Medicare.gov: the official U.S. government site for Medicare | Medicare</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_NAe5ihwpkYZoUye0cMGriEsTDePdWQXzyGY67mZTHDc.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_V8ctzQNQ5Zqsr_od3BNDRir1grWTbgTnaPrdOiivJJU.css" />
+
+    <script src='//assets.cms.gov/Resources/Global/JS/lib/jquery-1.7.2.js'></script>
+    <script src='//assets.cms.gov/Resources/Global/JS/sharewidget-4.0.js'></script>
+    <link rel="stylesheet"  AssetsSrc='/Resources/Global/css/sharewidget-4.0.css' href='//assets.cms.gov/resources/global/css/sharewidget-4.0.css' type="text/css"/>
+    <link rel="stylesheet"  AssetsSrc='/Resources/libs/fonts/adobeBlank/adobe-blank.css' href='//assets.cms.gov/resources/libs/fonts/adobeBlank/adobe-blank.css' type="text/css"/>
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+      </head>
+  <body class="layout-no-sidebars path-index path-frontpage page-node-type-landing-page">
+    	<script type="text/javascript" src="//tags.tiqcdn.com/utag/cmsgov/medicare-www/prod/utag.sync.js"></script>
+    <script type="text/javascript" src="//www.medicare.gov/optimizely/optimizely-medicare.js"></script>
+    <script type="text/javascript">
+      (function (t, e, a, l, i, u, m)
+      { t = "www"; e = /^(www|es|enrollmentcenter|plancompare|csr)\.medicare\.gov/; a = (e).test(window.location.hostname) ? 'prod' : 'dev'; l = '//tags.tiqcdn.com/utag/cmsgov/medicare-' + t + '/' + a + '/utag.js'; i = document; u = 'script'; m = i.createElement(u); m.src = l; m.type = 'text/java' + u; m.async = true; l = i.getElementsByTagName(u)[0]; l.parentNode.insertBefore(m, l); }
+      )();
+    </script>
+         <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-wrapper" class="ds-l-container">
+  <div id="live-text" aria-live="assertive" class="ds-u-visibility--screen-reader"></div>
+  <div id="page">
+    <header id="header" class="header" role="banner" aria-label="Site header">
+      <div class="section layout-container clearfix">
+	  	<button id="open-mobile-mainnav" class="mobile-mainnav-trigger ds-u-lg-display--none" aria-haspopup="true" aria-expanded="false">
+			<span class="ds-u-visibility--screen-reader">Expand Main Menu</span>
+		</button>
+		<div class="aux-close-container ds-u-md-display--none">
+			<button class="close-mobile-aux-trigger">close <span class="ds-u-visibility--screen-reader">resource Menu</span></button>
+		</div>
+          <div class="region region-secondary-menu">
+    <nav role="navigation" aria-labelledby="block-headertopleftlink-menu" id="block-headertopleftlink" class="ds-u-md-display--block block block-menu navigation menu--header-top-left-link" data-block-plugin-id="menu_block:header-top-left-link">
+            
+  <h2 class="visually-hidden" id="block-headertopleftlink-menu">Site Options</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-headertopleftlink"></div>
+    <div class="menu-toggle-target" id="hide-block-headertopleftlink"></div>
+    <a class="menu-toggle" href="#show-block-headertopleftlink">Show &mdash; Site Options</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-headertopleftlink">Hide &mdash; Site Options</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="" title="Español">Español</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Small Font">A</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Medium Font">A</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Large Font">A</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Print">Print</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+<nav role="navigation" aria-labelledby="block-headertoprightlink-menu" id="block-headertoprightlink" class="ds-u-md-display--block block block-menu navigation menu--header-top-right-link" data-block-plugin-id="menu_block:header-top-right-link">
+            
+  <h2 class="visually-hidden" id="block-headertoprightlink-menu">Resources</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-headertoprightlink"></div>
+    <div class="menu-toggle-target" id="hide-block-headertoprightlink"></div>
+    <a class="menu-toggle" href="#show-block-headertoprightlink">Show &mdash; Resources</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-headertoprightlink">Hide &mdash; Resources</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/about-us" title="About Us" data-drupal-link-system-path="node/38171">About Us</a>
+              </li>
+                <li class="menu-item">
+        <a href="/glossary/a" title="Glossary" data-drupal-link-system-path="glossary/a">Glossary</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/" title="CMS.gov">CMS.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.mymedicare.gov/" title="MyMedicare.gov Login">MyMedicare.gov Login</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+<nav role="navigation" aria-labelledby="block-headertopleftlink-2-menu" id="block-headertopleftlink-2" class="ds-u-md-display--none mobile-aux-nav-left block block-menu navigation menu--header-top-left-link" data-block-plugin-id="menu_block:header-top-left-link">
+            
+  <h2 class="visually-hidden" id="block-headertopleftlink-2-menu">Site Options</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-headertopleftlink-2"></div>
+    <div class="menu-toggle-target" id="hide-block-headertopleftlink-2"></div>
+    <a class="menu-toggle" href="#show-block-headertopleftlink-2">Show &mdash; Site Options</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-headertopleftlink-2">Hide &mdash; Site Options</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="" title="Español">Español</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Small Font">A</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Medium Font">A</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Large Font">A</a>
+              </li>
+                <li class="menu-item">
+        <a href="" title="Print">Print</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+<nav role="navigation" aria-labelledby="block-headertoprightlink-2-menu" id="block-headertoprightlink-2" class="ds-u-md-display--none mobile-aux-nav-right block block-menu navigation menu--header-top-right-link" data-block-plugin-id="menu_block:header-top-right-link">
+            
+  <h2 class="visually-hidden" id="block-headertoprightlink-2-menu">Resources</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-headertoprightlink-2"></div>
+    <div class="menu-toggle-target" id="hide-block-headertoprightlink-2"></div>
+    <a class="menu-toggle" href="#show-block-headertoprightlink-2">Show &mdash; Resources</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-headertoprightlink-2">Hide &mdash; Resources</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/about-us" title="About Us" data-drupal-link-system-path="node/38171">About Us</a>
+              </li>
+                <li class="menu-item">
+        <a href="/glossary/a" title="Glossary" data-drupal-link-system-path="glossary/a">Glossary</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/" title="CMS.gov">CMS.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.mymedicare.gov/" title="MyMedicare.gov Login">MyMedicare.gov Login</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+
+  </div>
+
+          <div class="clearfix region region-header">
+    <div id="block-medicare-base-branding" data-block-plugin-id="system_branding_block" class="clearfix site-branding block block-system block-system-branding-block">
+  
+    
+    <span class="create-date"></span>
+        <a href="/" title="Home" rel="home" class="site-branding__logo">
+      <img src="/sites/default/files/headerlogo.png" alt="Medicare.gov the official US Government site for Medicare" />
+    </a>
+    </div>
+  </div>
+
+		<div class="primary-close-container ds-u-lg-display--none">
+			<button class="close-mobile-main-trigger">close <span class="ds-u-visibility--screen-reader">Main Menu</span></button>
+			<button class="open-all-mobile-main-trigger"><span class="ds-u-visibility--screen-reader">Expand All Menu</span></button>
+			<button class="close-all-mobile-main-trigger"><span class="ds-u-visibility--screen-reader">Close All Menu</span></button>
+		</div>
+		<button id="open-mobile-aux" class="mobile-auxnav-trigger ds-u-md-display--none" aria-haspopup="true" aria-expanded="false">
+			<span class="ds-u-visibility--screen-reader">Expand Resource Menu</span>
+		</button>
+          <div class="region region-primary-menu">
+    <nav  id="block-mainnavigation" class="ds-u-lg-display--block block block-superfish block-superfishmain" data-block-plugin-id="superfish:main" role="navigation" aria-labelledby="mainNavHeading">
+  
+      <h2 id="mainNavHeading" >Main Menu</h2>
+    
+  <span class="create-date"></span>
+      <div class="content">
+      
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none">
+  
+<li id="main-menu-link-content67ed39a0-8638-4cab-9c5d-b7f839234016" class="sf-depth-1 sf-no-children"><a href="/blog/medicare-advantage-open-enrollment-2020" class="sf-depth-1">Don’t wait: Medicare Advantage Open Enrollment ends March 31</a></li><li id="main-menu-link-content821128a8-f366-47bd-b99c-bc067dea0823" class="sf-depth-1 sf-no-children"><a href="/privacy-policy" title="metaLinkRemove" class="sf-depth-1">Privacy policy</a></li><li id="main-menu-link-contentbf2cd609-7a91-40c7-9cbf-d989256aa2ad" class="sf-depth-1 sf-no-children"><a href="/whats-a-home-health-care-plan" title="metaLinkRemove" class="sf-depth-1">What’s a home health care plan?</a></li><li id="main-menu-link-content778e4e4c-3a79-4e08-b8fb-26a29c6d443a" class="sf-depth-1 menuparent"><a href="/sign-up-change-plans" title="Sign Up/Change Plans" class="sf-depth-1 menuparent">Sign Up               /                Change Plans</a><ul><li id="main-menu-link-contentc1f62a2d-ab64-4284-8edb-a519719045f5" class="sf-depth-2 sf-no-children"><a href="/sign-up-change-plans/get-started-with-medicare" title="Get started with Medicare" class="sf-depth-2">Get started with Medicare</a></li><li id="main-menu-link-contente26eb9d4-2ea9-4294-b765-3c0f4641e0ea" class="sf-depth-2 sf-no-children"><a href="/sign-up-change-plans/how-do-i-get-parts-a-b" class="sf-depth-2">How do I get Parts A &amp; B?</a></li><li id="main-menu-link-contentf926725f-8394-41ed-a813-2382e18c3c7e" class="sf-depth-2 sf-no-children"><a href="/sign-up-change-plans/i-have-employer-coverage" class="sf-depth-2">I have employer coverage</a></li><li id="main-menu-link-contentcf211702-7f4a-4525-baa1-f1482f5c47ef" class="sf-depth-2 sf-no-children"><a href="https://www.ssa.gov/medicare/" class="sf-depth-2">Apply for Medicare online</a></li><li id="main-menu-link-contentdc8657d2-1b6d-4244-b9a9-16abf7249137" class="sf-depth-2 sf-no-children"><a href="/sign-up-change-plans/joining-a-health-or-drug-plan" class="sf-depth-2">When can I join a health or drug plan?</a></li><li id="main-menu-link-contentff66c6df-a82a-4791-a3f8-2a20d6698dba" class="sf-depth-2 sf-no-children"><a href="/sign-up-change-plans/different-types-of-medicare-health-plans" class="sf-depth-2">Types of Medicare health plans</a></li><li id="main-menu-link-contentdd21b617-aa8e-41d8-ae86-d0d8b77b8254" class="sf-depth-2 sf-no-children"><a href="https://www.medicare.gov/plan-compare/" class="sf-depth-2">Find health &amp; drug plans</a></li><li id="main-menu-link-contentbf269491-fad1-4da1-8579-0cea22358c01" class="sf-depth-2 sf-no-children"><a href="https://www.medicare.gov/find-a-plan/enrollment/check-enrollment.aspx" class="sf-depth-2">Check your enrollment</a></li></ul></li><li id="main-menu-link-content2b6848ad-2670-4418-aaed-da303468217b" class="sf-depth-1 sf-no-children"><a href="/about-us" title="metaLinkRemove" class="sf-depth-1">About Us</a></li><li id="main-menu-link-contentc521052e-6c35-4c68-be14-0e6d03a0d39d" class="sf-depth-1 menuparent"><a href="/your-medicare-costs" title="Your Medicare Costs" class="sf-depth-1 menuparent">Your Medicare Costs</a><ul><li id="main-menu-link-content823d7af8-06e7-4bbf-bf87-245cf9420770" class="sf-depth-2 sf-no-children"><a href="/your-medicare-costs/get-help-paying-costs" class="sf-depth-2">Get help paying costs</a></li><li id="main-menu-link-content2d4b5b68-aa2b-4652-ad38-34e837f33b32" class="sf-depth-2 sf-no-children"><a href="/your-medicare-costs/part-a-costs" class="sf-depth-2">Part A costs</a></li><li id="main-menu-link-contentb58e9b16-1ef6-4f93-909d-16d2d5670cd7" class="sf-depth-2 sf-no-children"><a href="/your-medicare-costs/part-b-costs" class="sf-depth-2">Part B costs</a></li><li id="main-menu-link-content2c4df5cf-0c56-439b-b00e-29b6e5d4bfff" class="sf-depth-2 sf-no-children"><a href="/your-medicare-costs/costs-for-medicare-advantage-plans" class="sf-depth-2">Costs for Medicare health plans</a></li><li id="main-menu-link-content8be60d47-94a9-4221-b155-c61869b9ad27" class="sf-depth-2 sf-no-children"><a href="/procedure-price-lookup" class="sf-depth-2">Compare procedure costs</a></li><li id="main-menu-link-content80ca67d5-6d7b-49bb-be40-053fb7a31822" class="sf-depth-2 sf-no-children"><a href="/your-medicare-costs/pay-part-a-part-b-premiums" class="sf-depth-2">Ways to pay Part A &amp; Part B premiums</a></li><li id="main-menu-link-content6d51328c-20ff-4d35-bf75-e710e56a11ba" class="sf-depth-2 sf-no-children"><a href="/your-medicare-costs/medicare-costs-at-a-glance" class="sf-depth-2">Costs at a glance</a></li></ul></li><li id="main-menu-link-content809b507c-5b51-4d89-bd86-2de6d6d38753" class="sf-depth-1 menuparent"><a href="/what-medicare-covers" class="sf-depth-1 menuparent" title="What Medicare Covers">What Medicare Covers</a><ul><li id="main-menu-link-contentd5ca57c9-969b-4b68-a131-8ef8c6988f9e" class="sf-depth-2 sf-no-children"><a href="/coverage" class="sf-depth-2">Is my test, item, or service covered?</a></li><li id="main-menu-link-content9f62a858-bac0-4b34-b186-b7f4c49ec528" class="sf-depth-2 sf-no-children"><a href="/what-medicare-covers/your-medicare-coverage-choices" class="sf-depth-2">Your Medicare coverage choices</a></li><li id="main-menu-link-contentc65fe763-74dd-45aa-bf75-563344e2e93a" class="sf-depth-2 sf-no-children"><a href="/what-medicare-covers/what-part-a-covers" title="What Part A covers" class="sf-depth-2">What Part A covers</a></li><li id="main-menu-link-content9be2ab4b-5b1e-467a-bd47-bab68dce7309" class="sf-depth-2 sf-no-children"><a href="/what-medicare-covers/what-part-b-covers" class="sf-depth-2">What Part B covers</a></li><li id="main-menu-link-contentf5965090-8bb2-4bb5-8306-3f89d878e918" class="sf-depth-2 sf-no-children"><a href="/what-medicare-covers/what-medicare-health-plans-cover" title="What Medicare health plans cover" class="sf-depth-2">What Medicare health plans cover</a></li><li id="main-menu-link-content381f699b-6eee-4cc3-8e9c-204f9c3e7235" class="sf-depth-2 sf-no-children"><a href="/coverage/preventive-screening-services" title="Preventive &amp; screening services" class="sf-depth-2">Preventive &amp; screening services</a></li><li id="main-menu-link-content27e6757b-7547-4d49-a3c8-30060bcf0078" class="sf-depth-2 sf-no-children"><a href="/what-medicare-covers/whats-not-covered-by-part-a-part-b" title="What&#039;s not covered by Part A &amp; Part B?" class="sf-depth-2">What&#039;s not covered by Part A &amp; Part B</a></li></ul></li><li id="main-menu-link-content56c4800e-13b1-41ad-a0dc-95d23a91d35f" class="sf-depth-1 menuparent"><a href="/drug-coverage-part-d" title="Drug coverage (Part D)" class="sf-depth-1 menuparent">Drug Coverage (Part D)</a><ul><li id="main-menu-link-content533a4634-3ddf-42ee-8221-550a46985ec9" class="sf-depth-2 sf-no-children"><a href="/drug-coverage-part-d/how-to-get-prescription-drug-coverage" title="How to get prescription drug coverage" class="sf-depth-2">How to get prescription drug coverage</a></li><li id="main-menu-link-content80a7845b-1ba3-4019-89eb-93e5d115a598" class="sf-depth-2 sf-no-children"><a href="/drug-coverage-part-d/what-medicare-part-d-drug-plans-cover" title="What Medicare Part D drug plans cover" class="sf-depth-2">What Medicare Part D drug plans cover</a></li><li id="main-menu-link-content1c7eb745-261c-429d-a4de-06e489e64463" class="sf-depth-2 sf-no-children"><a href="/drug-coverage-part-d/costs-for-medicare-drug-coverage" title="Costs for Medicare drug coverage" class="sf-depth-2">Costs for Medicare drug coverage</a></li><li id="main-menu-link-contentdff08a5d-dfe4-49ae-82c4-e75906445c56" class="sf-depth-2 sf-no-children"><a href="/drug-coverage-part-d/how-part-d-works-with-other-insurance" title="How Part D works with other insurance" class="sf-depth-2">How Part D works with other insurance</a></li></ul></li><li id="main-menu-link-content8c710f03-37bc-40dd-863d-51f6f55049f8" class="sf-depth-1 menuparent"><a href="/supplements-other-insurance" title="Supplements &amp; Other Insurance" class="sf-depth-1 menuparent">Supplements &amp; Other Insurance</a><ul><li id="main-menu-link-content127d6f68-f4c2-4d06-97e4-ae4d24c1a5ba" class="sf-depth-2 sf-no-children"><a href="/supplements-other-insurance/how-medicare-works-with-other-insurance" title="How Medicare works with other insurance" class="sf-depth-2">How Medicare works with other insurance</a></li><li id="main-menu-link-content23fe142e-036a-402d-a170-8c5a0c0d0275" class="sf-depth-2 sf-no-children"><a href="/supplements-other-insurance/retiree-insurance" title="Retiree insurance" class="sf-depth-2">Retiree insurance</a></li><li id="main-menu-link-content47f5e3dd-ee66-4b0d-9b55-a8c221457535" class="sf-depth-2 sf-no-children"><a href="/supplements-other-insurance/whats-medicare-supplement-insurance-medigap" title="What&#039;s Medicare Supplement Insurance (Medigap)?" class="sf-depth-2">What&#039;s Medicare Supplement Insurance (Medigap)?</a></li><li id="main-menu-link-content5efe017c-2749-45e0-ae7f-7015ac305f0f" class="sf-depth-2 sf-no-children"><a href="https://www.medicare.gov/medigap-supplemental-insurance-plans/" class="sf-depth-2">Find a Medigap policy</a></li><li id="main-menu-link-contentfe71183c-4edf-4996-bfc6-717a5497023f" class="sf-depth-2 sf-no-children"><a href="/supplements-other-insurance/when-can-i-buy-medigap" title="When can I buy Medigap?" class="sf-depth-2">When can I buy Medigap?</a></li><li id="main-menu-link-contentf0013514-1b93-401f-bdbe-1fc40bb8288b" class="sf-depth-2 sf-no-children"><a href="/supplements-other-insurance/how-to-compare-medigap-policies" title="How to compare Medigap policies" class="sf-depth-2">How to compare Medigap policies</a></li><li id="main-menu-link-content473b760b-ef38-40da-96e7-c17615c0790a" class="sf-depth-2 sf-no-children"><a href="/supplements-other-insurance/medigap-travel" title="Medigap &amp; travel" class="sf-depth-2">Medigap &amp; travel</a></li></ul></li><li id="main-menu-link-content7f28a643-c184-4fb2-b985-bf36553a86c1" class="sf-depth-1 menuparent"><a href="/claims-appeals" title="Claims &amp; Appeals" class="sf-depth-1 menuparent">Claims &amp; Appeals</a><ul><li id="main-menu-link-contentc3d3b88a-a3c7-4efd-94bd-b5968df56a6d" class="sf-depth-2 sf-no-children"><a href="/claims-appeals/how-to-file-a-complaint-grievance" title="File a complaint" class="sf-depth-2">File a complaint (grievance)</a></li><li id="main-menu-link-contentd533bebb-0525-4655-80e4-6d44393063b4" class="sf-depth-2 sf-no-children"><a href="/claims-appeals/how-do-i-file-a-claim" title="File a claim" class="sf-depth-2">File a claim</a></li><li id="main-menu-link-contenta13582f3-4b59-4289-884b-3df756e1b175" class="sf-depth-2 sf-no-children"><a href="/claims-appeals/check-the-status-of-a-claim" title="Check the status of a claim" class="sf-depth-2">Check the status of a claim</a></li><li id="main-menu-link-content01d0f069-c108-4820-a4cf-a51557bac4f1" class="sf-depth-2 sf-no-children"><a href="/claims-appeals/how-do-i-file-an-appeal" title="File an appeal" class="sf-depth-2">File an appeal</a></li><li id="main-menu-link-content8714729c-166f-4580-8ebe-5dd61e69ddfe" class="sf-depth-2 sf-no-children"><a href="/claims-appeals/your-right-to-a-fast-appeal" title="Your right to a fast appeal" class="sf-depth-2">Your right to a fast appeal</a></li><li id="main-menu-link-contentb9b15e04-0534-4c0f-ad82-893505cc0086" class="sf-depth-2 sf-no-children"><a href="/claims-appeals/your-medicare-rights" title="Your Medicare rights" class="sf-depth-2">Your Medicare rights</a></li><li id="main-menu-link-contenta2eefea4-8148-4974-b85b-c955cbf8279e" class="sf-depth-2 sf-no-children"><a href="https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/Downloads/CMS10106.pdf " class="sf-depth-2">Authorization to Disclose Personal Health Information</a></li></ul></li><li id="main-menu-link-contentfa18b943-bec0-4b7e-b156-6c57913b0002" class="sf-depth-1 menuparent"><a href="/manage-your-health" title="Manage Your Health" class="sf-depth-1 menuparent">Manage Your Health</a><ul><li id="main-menu-link-content1cefff02-1172-42eb-b788-a378af807bdb" class="sf-depth-2 sf-no-children"><a href="https://account.mymedicare.gov/" class="sf-depth-2">Login to MyMedicare.gov </a></li><li id="main-menu-link-content7e406116-fcbf-4f2a-bd69-66332dcc28b9" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/advance-directives-long-term-care" title="Advance directives &amp; long-term care" class="sf-depth-2">Advance directives &amp; long-term care</a></li><li id="main-menu-link-contentd6dc06b3-8783-4db0-95b4-6ee85814a8b6" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/electronic-prescribing" title="Electronic prescribing" class="sf-depth-2">Electronic prescribing</a></li><li id="main-menu-link-contente6f8725c-33c2-46b1-9ec2-0e4c916cfab0" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/medicares-blue-button-blue-button-20" title="Medicare&#039;s Blue Button &amp; Blue Button 2.0" class="sf-depth-2">Medicare&#039;s Blue Button &amp; Blue Button 2.0</a></li><li id="main-menu-link-content077d8301-0669-4b58-b556-a9e96943f5b4" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/coordinating-your-care" title="Coordinating your care" class="sf-depth-2">Coordinating your care</a></li><li id="main-menu-link-content2c70cbab-e008-40af-9af1-e034a19aa165" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/information-for-my-situation" class="sf-depth-2">Information for my situation</a></li><li id="main-menu-link-contentde4f5105-2a51-416c-af29-6e8dcbaac9dd" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/i-have-a-disability" class="sf-depth-2" title="I have a disability">I have a disability</a></li><li id="main-menu-link-content62080320-ab48-45e1-9e4b-d8cc9f11be23" class="sf-depth-2 sf-no-children"><a href="/manage-your-health/i-have-end-stage-renal-disease-esrd" class="sf-depth-2">I have End-Stage Renal Disease (ESRD)</a></li></ul></li><li id="main-menu-link-content8b3003f8-9357-4784-8c37-830680b04bde" class="sf-depth-1 menuparent"><a href="/forms-help-resources" title="Forms, Help &amp; Resources" class="sf-depth-1 menuparent">Forms, Help, &amp; Resources</a><ul><li id="main-menu-link-content3d32c4f6-916a-4637-8a1b-efccf9d7563a" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/find-compare-health-care-providers" class="sf-depth-2">Find care</a></li><li id="main-menu-link-content362ac37e-2372-4a80-9bfa-3d1f36f76858" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/medicare-forms" class="sf-depth-2">Medicare forms</a></li><li id="main-menu-link-contentbb830669-e9f0-460f-b1e0-acd10cc75b40" class="sf-depth-2 sf-no-children"><a href="https://www.medicare.gov/Publications/" class="sf-depth-2">Free Medicare publications</a></li><li id="main-menu-link-content516dc888-eef5-465a-9767-eb4190c295ca" class="sf-depth-2 sf-no-children"><a href="/medicare-and-you" title="&quot;Medicare &amp; You&quot; handbook" class="sf-depth-2">&quot;Medicare &amp; You&quot; handbook</a></li><li id="main-menu-link-content3b4ac453-b2f9-4510-89a0-657235e068ef" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/mail-you-get-about-medicare" title="Mail you get about Medicare" class="sf-depth-2">Mail you get about Medicare</a></li><li id="main-menu-link-contenta352a8a3-e139-4955-affe-f2ac6130de34" class="sf-depth-2 sf-no-children"><a href="https://faq.ssa.gov/en-us/Topic/article/KA-01735" class="sf-depth-2">Lost/incorrect Medicare card</a></li><li id="main-menu-link-content9435342d-8aee-4b8f-8d3b-8513580e770b" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/help-fight-medicare-fraud" title="Report fraud &amp; abuse" class="sf-depth-2">Report fraud &amp; abuse</a></li><li id="main-menu-link-contentba71d534-9a55-443e-ba14-a71e14bba03b" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/identity-theft-protect-yourself" title="Identity theft: protect yourself" class="sf-depth-2">Identity theft: protect yourself</a></li><li id="main-menu-link-content2de0f52d-e6d4-48d4-b2b7-fbfd04cb1c63" class="sf-depth-2 sf-no-children"><a href="https://www.medicare.gov/Contacts/" class="sf-depth-2">Phone numbers &amp; websites</a></li><li id="main-menu-link-contentd750b15b-604a-4b69-9211-b6ce07847764" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/notice-of-privacy-practices-for-original-medicare" title="Privacy practices" class="sf-depth-2">Privacy practices</a></li><li id="main-menu-link-content37344d6d-30a6-4581-b75b-d703cdf10487" class="sf-depth-2 sf-no-children"><a href="/forms-help-resources/contact-medicare" class="sf-depth-2">Contact Medicare</a></li></ul></li>
+</ul>
+
+    </div>
+  </nav>
+<nav role="navigation" aria-labelledby="block-medicare-base-main-menu-menu" id="block-medicare-base-main-menu" class="ds-u-lg-display--none mobile-main-nav block block-menu navigation menu--main" data-block-plugin-id="system_menu_block:main">
+            
+  <h2 class="visually-hidden" id="block-medicare-base-main-menu-menu">Main Menu</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-medicare-base-main-menu"></div>
+    <div class="menu-toggle-target" id="hide-block-medicare-base-main-menu"></div>
+    <a class="menu-toggle" href="#show-block-medicare-base-main-menu">Show &mdash; Main Menu</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-medicare-base-main-menu">Hide &mdash; Main Menu</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/blog/medicare-advantage-open-enrollment-2020" data-drupal-link-system-path="node/40931">Don’t wait: Medicare Advantage Open Enrollment ends March 31</a>
+              </li>
+                <li class="menu-item">
+        <a href="/privacy-policy" title="metaLinkRemove" data-drupal-link-system-path="node/27866">Privacy policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/whats-a-home-health-care-plan" title="metaLinkRemove" data-drupal-link-system-path="node/27571">What’s a home health care plan?</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/sign-up-change-plans" title="Sign Up/Change Plans" data-drupal-link-system-path="node/35776">Sign Up               /                Change Plans</a>
+                                <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/sign-up-change-plans/get-started-with-medicare" title="Get started with Medicare" data-drupal-link-system-path="node/27656">Get started with Medicare</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/sign-up-change-plans/how-do-i-get-parts-a-b" data-drupal-link-system-path="node/26226">How do I get Parts A &amp; B?</a>
+              </li>
+                <li class="menu-item">
+        <a href="/sign-up-change-plans/i-have-employer-coverage" data-drupal-link-system-path="node/27816">I have employer coverage</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.ssa.gov/medicare/">Apply for Medicare online</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/sign-up-change-plans/joining-a-health-or-drug-plan" data-drupal-link-system-path="node/26251">When can I join a health or drug plan?</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/sign-up-change-plans/different-types-of-medicare-health-plans" data-drupal-link-system-path="node/26241">Types of Medicare health plans</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/plan-compare/">Find health &amp; drug plans</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/find-a-plan/enrollment/check-enrollment.aspx">Check your enrollment</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/about-us" title="metaLinkRemove" data-drupal-link-system-path="node/38171">About Us</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/your-medicare-costs" title="Your Medicare Costs" data-drupal-link-system-path="node/26266">Your Medicare Costs</a>
+                                <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/your-medicare-costs/get-help-paying-costs" data-drupal-link-system-path="node/26356">Get help paying costs</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/your-medicare-costs/part-a-costs" data-drupal-link-system-path="node/26361">Part A costs</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/your-medicare-costs/part-b-costs" data-drupal-link-system-path="node/26366">Part B costs</a>
+              </li>
+                <li class="menu-item">
+        <a href="/your-medicare-costs/costs-for-medicare-advantage-plans" data-drupal-link-system-path="node/26351">Costs for Medicare health plans</a>
+              </li>
+                <li class="menu-item">
+        <a href="/procedure-price-lookup" data-drupal-link-system-path="node/39246">Compare procedure costs</a>
+              </li>
+                <li class="menu-item">
+        <a href="/your-medicare-costs/pay-part-a-part-b-premiums" data-drupal-link-system-path="node/26371">Ways to pay Part A &amp; Part B premiums</a>
+              </li>
+                <li class="menu-item">
+        <a href="/your-medicare-costs/medicare-costs-at-a-glance" data-drupal-link-system-path="node/26886">Costs at a glance</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/what-medicare-covers" title="What Medicare Covers" data-drupal-link-system-path="node/38536">What Medicare Covers</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/coverage">Is my test, item, or service covered?</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/what-medicare-covers/your-medicare-coverage-choices" data-drupal-link-system-path="node/27246">Your Medicare coverage choices</a>
+              </li>
+                <li class="menu-item">
+        <a href="/what-medicare-covers/what-part-a-covers" title="What Part A covers" data-drupal-link-system-path="node/26276">What Part A covers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/what-medicare-covers/what-part-b-covers" data-drupal-link-system-path="node/26386">What Part B covers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/what-medicare-covers/what-medicare-health-plans-cover" title="What Medicare health plans cover" data-drupal-link-system-path="node/26381">What Medicare health plans cover</a>
+              </li>
+                <li class="menu-item">
+        <a href="/coverage/preventive-screening-services" title="Preventive &amp; screening services" data-drupal-link-system-path="node/28461">Preventive &amp; screening services</a>
+              </li>
+                <li class="menu-item">
+        <a href="/what-medicare-covers/whats-not-covered-by-part-a-part-b" title="What&#039;s not covered by Part A &amp; Part B?" data-drupal-link-system-path="node/26391">What&#039;s not covered by Part A &amp; Part B</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/drug-coverage-part-d" title="Drug coverage (Part D)" data-drupal-link-system-path="node/26446">Drug Coverage (Part D)</a>
+                                <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/drug-coverage-part-d/how-to-get-prescription-drug-coverage" title="How to get prescription drug coverage" data-drupal-link-system-path="node/26246">How to get prescription drug coverage</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/drug-coverage-part-d/what-medicare-part-d-drug-plans-cover" title="What Medicare Part D drug plans cover" data-drupal-link-system-path="node/26321">What Medicare Part D drug plans cover</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/drug-coverage-part-d/costs-for-medicare-drug-coverage" title="Costs for Medicare drug coverage" data-drupal-link-system-path="node/26311">Costs for Medicare drug coverage</a>
+              </li>
+                <li class="menu-item">
+        <a href="/drug-coverage-part-d/how-part-d-works-with-other-insurance" title="How Part D works with other insurance" data-drupal-link-system-path="node/26326">How Part D works with other insurance</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/supplements-other-insurance" title="Supplements &amp; Other Insurance" data-drupal-link-system-path="node/26256">Supplements &amp; Other Insurance</a>
+                                <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/supplements-other-insurance/how-medicare-works-with-other-insurance" title="How Medicare works with other insurance" data-drupal-link-system-path="node/26526">How Medicare works with other insurance</a>
+              </li>
+                <li class="menu-item">
+        <a href="/supplements-other-insurance/retiree-insurance" title="Retiree insurance" data-drupal-link-system-path="node/26536">Retiree insurance</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/supplements-other-insurance/whats-medicare-supplement-insurance-medigap" title="What&#039;s Medicare Supplement Insurance (Medigap)?" data-drupal-link-system-path="node/26301">What&#039;s Medicare Supplement Insurance (Medigap)?</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/medigap-supplemental-insurance-plans/">Find a Medigap policy</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/supplements-other-insurance/when-can-i-buy-medigap" title="When can I buy Medigap?" data-drupal-link-system-path="node/26551">When can I buy Medigap?</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/supplements-other-insurance/how-to-compare-medigap-policies" title="How to compare Medigap policies" data-drupal-link-system-path="node/26506">How to compare Medigap policies</a>
+              </li>
+                <li class="menu-item">
+        <a href="/supplements-other-insurance/medigap-travel" title="Medigap &amp; travel" data-drupal-link-system-path="node/26531">Medigap &amp; travel</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/claims-appeals" title="Claims &amp; Appeals" data-drupal-link-system-path="node/26416">Claims &amp; Appeals</a>
+                                <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/claims-appeals/how-to-file-a-complaint-grievance" title="File a complaint" data-drupal-link-system-path="node/26426">File a complaint (grievance)</a>
+              </li>
+                <li class="menu-item">
+        <a href="/claims-appeals/how-do-i-file-a-claim" title="File a claim" data-drupal-link-system-path="node/26421">File a claim</a>
+              </li>
+                <li class="menu-item">
+        <a href="/claims-appeals/check-the-status-of-a-claim" title="Check the status of a claim" data-drupal-link-system-path="node/27666">Check the status of a claim</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/claims-appeals/how-do-i-file-an-appeal" title="File an appeal" data-drupal-link-system-path="node/26431">File an appeal</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/claims-appeals/your-right-to-a-fast-appeal" title="Your right to a fast appeal" data-drupal-link-system-path="node/26441">Your right to a fast appeal</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/claims-appeals/your-medicare-rights" title="Your Medicare rights" data-drupal-link-system-path="node/26436">Your Medicare rights</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/Downloads/CMS10106.pdf ">Authorization to Disclose Personal Health Information</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/manage-your-health" title="Manage Your Health" data-drupal-link-system-path="node/26236">Manage Your Health</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://account.mymedicare.gov/">Login to MyMedicare.gov </a>
+              </li>
+                <li class="menu-item">
+        <a href="/manage-your-health/advance-directives-long-term-care" title="Advance directives &amp; long-term care" data-drupal-link-system-path="node/26486">Advance directives &amp; long-term care</a>
+              </li>
+                <li class="menu-item">
+        <a href="/manage-your-health/electronic-prescribing" title="Electronic prescribing" data-drupal-link-system-path="node/26501">Electronic prescribing</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/manage-your-health/medicares-blue-button-blue-button-20" title="Medicare&#039;s Blue Button &amp; Blue Button 2.0" data-drupal-link-system-path="node/26491">Medicare&#039;s Blue Button &amp; Blue Button 2.0</a>
+              </li>
+                <li class="menu-item">
+        <a href="/manage-your-health/coordinating-your-care" title="Coordinating your care" data-drupal-link-system-path="node/26481">Coordinating your care</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/manage-your-health/information-for-my-situation" data-drupal-link-system-path="node/40311">Information for my situation</a>
+              </li>
+                <li class="menu-item">
+        <a href="/manage-your-health/i-have-a-disability" title="I have a disability" data-drupal-link-system-path="node/27896">I have a disability</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/manage-your-health/i-have-end-stage-renal-disease-esrd" data-drupal-link-system-path="node/27911">I have End-Stage Renal Disease (ESRD)</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/forms-help-resources" title="Forms, Help &amp; Resources" data-drupal-link-system-path="node/26231">Forms, Help, &amp; Resources</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/forms-help-resources/find-compare-health-care-providers" data-drupal-link-system-path="node/26471">Find care</a>
+              </li>
+                <li class="menu-item">
+        <a href="/forms-help-resources/medicare-forms" data-drupal-link-system-path="node/27601">Medicare forms</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/Publications/">Free Medicare publications</a>
+              </li>
+                <li class="menu-item">
+        <a href="/medicare-and-you" title="&quot;Medicare &amp; You&quot; handbook" data-drupal-link-system-path="node/35771">&quot;Medicare &amp; You&quot; handbook</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/forms-help-resources/mail-you-get-about-medicare" title="Mail you get about Medicare" data-drupal-link-system-path="node/26456">Mail you get about Medicare</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://faq.ssa.gov/en-us/Topic/article/KA-01735">Lost/incorrect Medicare card</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/forms-help-resources/help-fight-medicare-fraud" title="Report fraud &amp; abuse" data-drupal-link-system-path="node/26476">Report fraud &amp; abuse</a>
+              </li>
+                <li class="menu-item">
+        <a href="/forms-help-resources/identity-theft-protect-yourself" title="Identity theft: protect yourself" data-drupal-link-system-path="node/26466">Identity theft: protect yourself</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/Contacts/">Phone numbers &amp; websites</a>
+              </li>
+                <li class="menu-item">
+        <a href="/forms-help-resources/notice-of-privacy-practices-for-original-medicare" title="Privacy practices" data-drupal-link-system-path="node/26461">Privacy practices</a>
+              </li>
+                <li class="menu-item">
+        <a href="/forms-help-resources/contact-medicare" data-drupal-link-system-path="node/26451">Contact Medicare</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+<div class="search-block-form google-cse block block-search container-inline" data-drupal-selector="search-block-form" id="block-searchform" data-block-plugin-id="search_form_block" role="search">
+  
+    
+    <div class="content container-inline">
+        <form action="/search/medicare" method="get" id="search-block-form" accept-charset="UTF-8" role="search" class="search-form search-block-form">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        <input title="Enter the terms you wish to search for." placeholder="Search Medicare" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2"><input class="search-form__submit button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" />
+</div>
+
+</form>
+
+  
+  </div>
+</div>
+
+  </div>
+
+      </div>
+    </header>
+          <div class="highlighted">
+            <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+      </div>
+            <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
+      <div id="main" class="layout-main clearfix">
+        
+        <div class="ds-l-row">
+                              <main id="content" class="column main-content ds-l-lg-col--12 full-width-content" role="main">
+                      <div class="section">
+              <a id="main-content" tabindex="-1"></a>
+                <div class="region region-content">
+    <div id="block-medicare-base-page-title" data-block-plugin-id="page_title_block" class="block block-core block-page-title-block">
+  
+    
+    <span class="create-date"></span>
+      <div class="content">
+      
+  <h1 class="title page-title"><span class="field field--name-title field--type-string field--label-hidden">Medicare.gov: the official U.S. government site for Medicare</span>
+</h1>
+
+
+    </div>
+  </div><div id="block-medicare-base-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+    <span class="create-date"></span>
+      <div class="content">
+      
+
+<div id="medicare-alerts" class="ds-l-row">
+  <div class="ds-l-lg-col--11 ds-l-sm-col--8"></div>
+  <div class="ds-l-lg-col--1 ds-l-sm-col--4"><span id="close-alert"><button class="close-btn">X<span class="ds-u-visibility--screen-reader">close alert</span></button></span></div>
+</div>
+<article role="article" about="/index" class="node node--type-landing-page node--view-mode-full clearfix">
+  <div class="node__content clearfix">    
+    <div id="banner-container">
+      <div class="homepage-overlay">
+        
+  <h2 class="field field--name-field-banner-text field--type-string field--label-hidden field__item">Make the most of your 2021 coverage</h2>
+
+
+
+        <div class="field field--name-field-banner-actions field--type-link field--label-hidden">
+  <ul class="field__items banner-actions">
+             <li class="field__item"><span class='btn' id=homebannerbtn0><a href="https://www.medicare.gov/what-medicare-covers">See what Medicare covers</a></span></li>
+                  <li class="field__item"><span class='btn' id=homebannerbtn1><a href="https://www.medicare.gov/plan-compare/">Find Health &amp; Drug Plans</a></span></li>
+             </ul>
+</div>
+
+
+      </div>  
+      
+            <div class="field field--name-field-homepage-banner field--type-image field--label-hidden field__item">  <img src="/sites/default/files/Bene-version-2021coverage.png" width="1020" height="350" alt="" typeof="foaf:Image" />
+
+</div>
+        
+    </div> 
+    <div id="announcement-container" class="ds-l-row">
+      <div id="announcement-text" class="announcement-text ds-l-sm-col--12  ds-l-md-col--7 ds-l-xl-col--8">
+        
+            <div class="field field--name-field-announcement-text field--type-string field--label-hidden field__item">See how Medicare is responding to Coronavirus</div>
+      
+      </div>
+      <div class="announcement-actions ds-l-sm-col--12  ds-l-md-col--5 ds-l-xl-col--4">  
+        <div class="field field--name-field-announcement-button field--type-link field--label-hidden">
+  <div class="field__items">
+          <span  class="field__item"><span><a href="/medicare-coronavirus">Learn More</a><span id="announcement-open" class="ds-u-visibility--screen-reader">opens in new window</span></span></span>
+      </div>
+</div>
+
+
+      </div>  
+    </div>  
+    <div id="home-cards-container">
+      
+  <div id="home-page-card-section" class="ds-l-row  class="field field--name-field-card-section field--type-text-long field--label-hidden field__item"><div class="ds-l-sm-col--12 ds-l-md-col--4 ds-l-lg-col--3 ds-l-xl-col--3 home-card" id="homecard1">
+<span alt="login-account" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-type="media" data-entity-uuid="df2ff274-2502-4e7d-9121-17c001117aa0" data-langcode="en" title="login-account" class="embedded-entity">  <img src="/sites/default/files/login-account.png" alt="login-account" title="login-account" typeof="foaf:Image" /></span>
+<h2 class="card-title"><a href="https://account.mymedicare.gov/?client_id=mbp&amp;redirect_uri=https%3A%2F%2Fwww.mymedicare.gov%2Flogincallback.aspx">Log in/Create account</a></h2>
+
+<div class="card-text" id="card-1">Access your Medicare account</div>
+</div>
+
+<div class="ds-l-sm-col--12 ds-l-md-col--4 ds-l-lg-col--3 ds-l-xl-col--3 home-card" id="homecard2">
+<span alt="dollar sign" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-type="media" data-entity-uuid="8a25d819-7651-4615-ae19-d7906fc4bed8" data-langcode="en" title="dollar-sign" class="embedded-entity">  <img src="/sites/default/files/2020-plan-costs.png" alt="dollar sign" title="dollar-sign" typeof="foaf:Image" /></span>
+<h2 class="card-title"><a href="https://www.medicare.gov/your-medicare-costs/medicare-costs-at-a-glance">2021 Medicare Costs</a></h2>
+
+<div class="card-text" id="card-2">See basic Medicare costs for 2021</div>
+</div>
+
+<div class="ds-l-sm-col--12 ds-l-md-col--4 ds-l-lg-col--3 ds-l-xl-col--3 home-card" id="homecard3">
+<span alt="Find care" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-type="media" data-entity-uuid="ca9e96a3-5399-4c99-b5e8-1479d94dde9e" data-langcode="en" title="Find care" class="embedded-entity">  <img src="/sites/default/files/findcare.png" alt="Find care" title="Find care" typeof="foaf:Image" /></span>
+<h2 class="card-title"><a href="https://www.medicare.gov/care-compare/">Find care</a></h2>
+
+<div class="card-text" id="card-3">Search all providers &amp; facilities</div>
+</div>
+
+<div class="ds-l-sm-col--12 ds-l-md-col--4 ds-l-lg-col--3 ds-l-xl-col--3 home-card" id="homecard4">
+<span alt="calendar check" data-embed-button="media_browser" data-entity-embed-display="media_image" data-entity-type="media" data-entity-uuid="13aca434-db38-412c-a54a-f3ea8c576b25" data-langcode="en" title="calendar check" class="embedded-entity">  <img src="/sites/default/files/calendar-check.png" alt="calendar check" title="calendar check" typeof="foaf:Image" /></span>
+<h2 class="card-title"><a href="https://www.medicare.gov/sign-up-change-plans/when-can-i-join-a-health-or-drug-plan/special-circumstances-special-enrollment-periods">Want a new plan now?</a></h2>
+
+<div class="card-text" id="card-3">See if you can join</div>
+</div></div>
+
+
+
+    </div> 
+    <div id="resources-container" class="ds-l-row">
+      <div class="resources ds-l-sm-col--12 ds-l-lg-col--4 ds-l-xl-col--4">
+        <h2 class="resources-title">
+            <div class="field field--name-field-related-resources-title field--type-string field--label-hidden field__item">Resources</div>
+      </h2>
+        <div class="resources-body" id="divresources">
+            <div class="clearfix text-formatted field field--name-field-related-resources-body field--type-text-long field--label-hidden field__item"><ul><li><a href="https://www.ssa.gov/benefits/medicare" target="_blank">Apply for Medicare<span class="ds-u-visibility--screen-reader">opens in new window</span></a></li>
+	<li><a href="/your-medicare-costs/medicare-costs-at-a-glance" title="Medicare costs at a glance">See 2020 Medicare costs</a></li>
+	<li><a href="https://www.medicare.gov/Contacts/">Find local help</a></li>
+	<li><a href="https://www.medicare.gov/forms-help-resources/your-medicare-card">Medicare card issues</a></li>
+	<li><a href="https://www.medicare.gov/forms-help-resources/mail-you-get-about-medicare">Mail you get about Medicare</a></li>
+</ul></div>
+      </div>
+      </div>
+      <div class="email ds-l-sm-col--12 ds-l-lg-col--8 ds-l-xl-col--8">
+        <div class="email-container">            
+          <div id="email-container-block">
+            <div id="email-address-form">
+            <script src=https://public.govdelivery.com/assets/Signup.js data-account-code=USCMSMYMEDICARE data-signup-id=17049> </script>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div id ="whats-new-container" class="ds-l-row">
+       <div class="blogs-news ds-l-sm-col--12 ds-l-lg-col--5 ds-l-xl-col--5" id="divwhatsnew">
+          <h2>
+            <div class="field field--name-field-whats-new-label field--type-string field--label-hidden field__item">What&#039;s new</div>
+      </h2>
+           <h3 class="tag blog-tag"><a href="https://www.medicare.gov/blog">Blogs</a></h3>
+            <ul class="blog" id="bloglinks">
+            </ul>
+          <div class="news" id="newslink">
+            <h3 class="tag news-tag">
+            <div class="field field--name-field-news-title field--type-link field--label-hidden field__item"><a href="https://www.cms.gov/Newsroom">News</a></div>
+      </h3>
+            
+            <div class="field field--name-field-news-link field--type-link field--label-hidden field__item"><a href="https://www.cms.gov/newsroom/press-releases/2021-medicare-part-b-premiums-remain-steady">2021 Medicare Part B premiums remain steady</a></div>
+      
+          </div>
+        </div>  
+        <div class="video ds-l-sm-col--12  ds-l-lg-col--7 ds-l-xl-col--7">
+          <h2 id="video-title">
+            <div class="field field--name-field-video-title field--type-string field--label-hidden field__item">Medicare 2020 Flu Ad - Dad &amp; Me</div>
+      </h2>
+          <div class="video-container"> 
+            <div>
+            <div class="field field--name-field-video-embed field--type-video-embed-field field--label-hidden field__item"><div class="video-embed-field-provider-youtube video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/3sySC4OLDOE?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+</div>
+      </div>
+          </div>    
+        </div>
+    </div> 
+  </div>
+</article>
+
+
+
+    </div>
+  </div>
+  </div>
+
+            </div>
+          </main>
+                  </div>
+      </div>
+    </div>
+        <footer class="site-footer">
+	  <h2 class="ds-u-visibility--screen-reader">Footer</h2>
+      <div class="layout-container">
+                  <div class="site-footer__top clearfix">
+              <div class="region region-footer-first">
+    <div id="block-footerheaderblock" data-block-plugin-id="block_content:7b2a76d5-166d-4200-8f33-133d4c0f2bbb" class="block block-block-content block-block-content7b2a76d5-166d-4200-8f33-133d4c0f2bbb">
+  
+    
+    <span class="create-date"></span>
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="ds-l-container footer-header">
+<div class="ds-l-row">
+<div class="ds-l-lg-col--4 ds-l-md-col--5 footer-hcol1">
+<div class="inner"><button class="btn btn-primary" id="footer_home_btn" onclick="window.location.href='/';return false;" title="Medicare.gov Home">Home</button><a class="footer-medicare-logo" href="/"><img alt="Medicare.gov Logo" data-entity-type="" data-entity-uuid="" height="34" src="/themes/custom/medicare_base/images/medicare-footer-logo.png" typeof="foaf:Image" width="218" /></a></div>
+</div>
+
+<div class="ds-l-lg-col--8 ds-l-md-col--7 footer-hcol2">
+<div class="inner"><span>A federal government website managed and paid for by the U.S. Centers for Medicare &amp; Medicaid Services.</span> <a class="footer-hhs" href="http://www.hhs.gov"><img alt="HHS.gov U.S. Department of Health &amp; Human Services Logo" class="footer-hhs" data-entity-type="" data-entity-uuid="" height="64" src="/themes/custom/medicare_base/images/hhs-footer-logo.png" typeof="foaf:Image" width="64" /></a></div>
+</div>
+</div>
+</div></div>
+      
+    </div>
+  </div>
+  </div>
+
+          </div>
+        		          <div class="site-footer__bottom clearfix">
+              <div class="region region-footer-second">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-2-menu" id="block-mainnavigation-2" data-block-plugin-id="menu_block:main" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-2-menu">Main navigation</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-mainnavigation-2"></div>
+    <div class="menu-toggle-target" id="hide-block-mainnavigation-2"></div>
+    <a class="menu-toggle" href="#show-block-mainnavigation-2">Show &mdash; Main navigation</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-mainnavigation-2">Hide &mdash; Main navigation</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/blog/medicare-advantage-open-enrollment-2020" data-drupal-link-system-path="node/40931">Don’t wait: Medicare Advantage Open Enrollment ends March 31</a>
+              </li>
+                <li class="menu-item">
+        <a href="/privacy-policy" title="metaLinkRemove" data-drupal-link-system-path="node/27866">Privacy policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/whats-a-home-health-care-plan" title="metaLinkRemove" data-drupal-link-system-path="node/27571">What’s a home health care plan?</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/sign-up-change-plans" title="Sign Up/Change Plans" data-drupal-link-system-path="node/35776">Sign Up               /                Change Plans</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/about-us" title="metaLinkRemove" data-drupal-link-system-path="node/38171">About Us</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/your-medicare-costs" title="Your Medicare Costs" data-drupal-link-system-path="node/26266">Your Medicare Costs</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/what-medicare-covers" title="What Medicare Covers" data-drupal-link-system-path="node/38536">What Medicare Covers</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/drug-coverage-part-d" title="Drug coverage (Part D)" data-drupal-link-system-path="node/26446">Drug Coverage (Part D)</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/supplements-other-insurance" title="Supplements &amp; Other Insurance" data-drupal-link-system-path="node/26256">Supplements &amp; Other Insurance</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/claims-appeals" title="Claims &amp; Appeals" data-drupal-link-system-path="node/26416">Claims &amp; Appeals</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/manage-your-health" title="Manage Your Health" data-drupal-link-system-path="node/26236">Manage Your Health</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/forms-help-resources" title="Forms, Help &amp; Resources" data-drupal-link-system-path="node/26231">Forms, Help, &amp; Resources</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+
+  </div>
+
+              <div class="region region-footer-third">
+    <nav role="navigation" aria-labelledby="block-takeaction-menu" id="block-takeaction" data-block-plugin-id="menu_block:take-action" class="block block-menu navigation menu--take-action">
+      
+  <h2 id="block-takeaction-menu">Take Action</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-takeaction"></div>
+    <div class="menu-toggle-target" id="hide-block-takeaction"></div>
+    <a class="menu-toggle" href="#show-block-takeaction">Show &mdash; Take Action</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-takeaction">Hide &mdash; Take Action</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="https://www.medicare.gov/plan-compare/" title="Find health &amp; drug plans">Find health &amp; drug plans</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/care-compare">Find care</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/supplierdirectory/search.html" title="Where can I get covered medical items?">Where can I get covered medical items?</a>
+              </li>
+                <li class="menu-item">
+        <a href="/forms-help-resources/medicare-forms" title="Get Medicare forms" data-drupal-link-system-path="node/27601">Get Medicare forms</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/Publications/" title="Publications">Publications</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about-us/information-in-other-languages" title="Information in other languages" data-drupal-link-system-path="node/26406">Information in other languages</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/Contacts/" title="Phone numbers &amp; websites">Phone numbers &amp; websites</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+
+  </div>
+
+              <div class="region region-footer-fourth">
+    <nav role="navigation" aria-labelledby="block-helpfullinks-menu" id="block-helpfullinks" data-block-plugin-id="menu_block:helpful-links" class="block block-menu navigation menu--helpful-links">
+      
+  <h2 id="block-helpfullinks-menu">Helpful Links</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-helpfullinks"></div>
+    <div class="menu-toggle-target" id="hide-block-helpfullinks"></div>
+    <a class="menu-toggle" href="#show-block-helpfullinks">Show &mdash; Helpful Links</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-helpfullinks">Hide &mdash; Helpful Links</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/sitemap" title="Site Map" data-drupal-link-system-path="sitemap">Site Map</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/index.html" title="Site policies &amp; important links">Site policies &amp; important links</a>
+              </li>
+                <li class="menu-item">
+        <a href="/privacy-policy" title="Privacy policy" data-drupal-link-system-path="node/27866">Privacy policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="#1" title="Privacy settings">Privacy settings</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about-us/accessibility-nondiscrimination-notice" title="Accessibility / Nondiscrimination" data-drupal-link-system-path="node/27661">Accessibility / Nondiscrimination</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/FOIA.html" title="Freedom of Information Act">FOIA</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/NoFearAct.html" title="No Fear Act">No Fear Act</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://USA.gov" title="USA.gov">USA.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://oig.hhs.gov" title="Inspector General">Inspector General</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about-us/plain-writing" title="Plain language" data-drupal-link-system-path="node/26411">Plain language</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://archive-it.org/collections/2650" title="Archive">Archive</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/download/downloaddb.asp" title="Downloadable databases">Downloadable databases</a>
+              </li>
+                <li class="menu-item">
+        <a href="/medicare-and-you" title="Medicare &amp; You Handbook" data-drupal-link-system-path="node/35771">“Medicare &amp; You” Handbook</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/Help.html" title="Help with file formats &amp; plug-ins">Help with file formats &amp; plug-ins</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://public.govdelivery.com/accounts/USCMSMYMEDICARE/subscriber/edit">Manage your email preferences</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.medicare.gov/blog">Blog</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+
+  </div>
+
+			  <div class="region region-footer-fifth">
+    <nav role="navigation" aria-labelledby="block-cmshhswebsites-menu" id="block-cmshhswebsites" data-block-plugin-id="menu_block:cms-hhs-websites" class="block block-menu navigation menu--cms-hhs-websites">
+      
+  <h2 id="block-cmshhswebsites-menu">CMS &amp; HHS Websites</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-cmshhswebsites"></div>
+    <div class="menu-toggle-target" id="hide-block-cmshhswebsites"></div>
+    <a class="menu-toggle" href="#show-block-cmshhswebsites">Show &mdash; CMS &amp; HHS Websites</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-cmshhswebsites">Hide &mdash; CMS &amp; HHS Websites</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="https://www.healthcare.gov/" title="HealthCare.gov">HealthCare.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.insurekidsnow.gov" title="InsureKidsNow.gov">InsureKidsNow.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mymedicare.gov" title="MyMedicare.gov">MyMedicare.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://medicaid.gov" title="Medicaid.gov">Medicaid.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cms.gov/" title="CMS.gov">CMS.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.HHS.gov" title="HHS.gov">HHS.gov</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+<nav role="navigation" aria-labelledby="block-getinvolvedwithus-menu" id="block-getinvolvedwithus" data-block-plugin-id="menu_block:get-involved-with-us" class="block block-menu navigation menu--get-involved-with-us">
+      
+  <h2 id="block-getinvolvedwithus-menu">Get Involved with Us</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-getinvolvedwithus"></div>
+    <div class="menu-toggle-target" id="hide-block-getinvolvedwithus"></div>
+    <a class="menu-toggle" href="#show-block-getinvolvedwithus">Show &mdash; Get Involved with Us</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-getinvolvedwithus">Hide &mdash; Get Involved with Us</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="http://www.twitter.com/MedicareGov" title="Twitter">Twitter</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.youtube.com/user/CMSHHSgov" title="YouTube">Youtube</a>
+              </li>
+                <li class="menu-item">
+        <a href="/rss-feeds" title="RSS" data-drupal-link-system-path="rss-feeds">RSS</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+<div id="block-medicaregovprivacysettings" data-block-plugin-id="block_content:ad0e4e8b-d1b9-4d7e-af99-22d3a8d8fc54" class="block block-block-content block-block-contentad0e4e8b-d1b9-4d7e-af99-22d3a8d8fc54">
+  
+    
+    <span class="create-date"></span>
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="privacy-modal" role="dialog">
+<div class="modal-dialog modal-lg">
+<div class="modal-content" role="document">
+<div class="modal-header"><button aria-label="close" class="close" data-dismiss="modal" tabindex="1" title="close" type="button">×</button>
+<h1 id="modal-nams" title="">Medicare.gov Privacy Settings</h1>
+</div>
+
+<div class="modal-body">
+<h2 id="modalMsgTitle"><strong>Your Privacy Options</strong></h2>
+
+<p id="modalMsg">We take your privacy seriously. You can change the settings below to make sure you're comfortable with the ways we collect and use information while you're on Medicare.gov. For more information, please see our <a title="Privacy policy" href="/privacy-policy">privacy notice</a>.</p>
+
+<table>
+	<thead>
+		<tr>
+			<th id="vendorlabel" scope="col">Category</th>
+			<th id="desclabel" scope="col">Description</th>
+			<th id="statuslabel" scope="col">Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td id="ppRowLabel_Advertising" scope="row">Advertising</td>
+			<td>We use digital advertising tools, such as web beacons, to track the effectiveness of our digital advertising outreach efforts. This helps us identify ads that are helpful to consumers and efficient for outreach. Selecting OFF will block this tracking.</td>
+			<td><input aria-describedby="ppRowLabel_Advertising statuslabel" checked="checked" id="AdvertisingOn" name="Advertising" tabindex="4" type="radio" value="on" /> <label for="AdvertisingOn">On</label><br />
+			<input aria-describedby="ppRowLabel_Advertising statuslabel" id="AdvertisingOff" name="Advertising" tabindex="4" type="radio" value="off" /> <label for="AdvertisingOff">Off</label></td>
+		</tr>
+		<tr>
+			<td id="ppRowLabel_Social_Media" scope="row">Social Media</td>
+			<td>If you share our content on Facebook, Twitter, or other social media accounts, we may track what Medicare.gov content you share. This helps us improve our social media outreach. Selecting OFF will block this tracking.</td>
+			<td><input aria-describedby="ppRowLabel_Social_Media statuslabel" checked="checked" id="Social_MediaOn" name="Social_Media" tabindex="5" type="radio" value="on" /> <label for="Social_MediaOn">On</label><br />
+			<input aria-describedby="ppRowLabel_Social_Media statuslabel" id="Social_MediaOff" name="Social_Media" tabindex="5" type="radio" value="off" /> <label for="Social_MediaOff">Off</label></td>
+		</tr>
+		<tr>
+			<td id="ppRowLabel_Web_Analytics" scope="row">Web Analytics</td>
+			<td>We use a variety of tools to count, track, and analyze visits to Medicare.gov. This helps us understand how people use the site and where we should make improvements. Selecting OFF will block this tracking.</td>
+			<td><input aria-describedby="ppRowLabel_Web_Analytics statuslabel" checked="checked" id="Web_AnalyticsOn" name="Web_Analytics" tabindex="6" type="radio" value="on" /> <label for="Web_AnalyticsOn">On</label><br />
+			<input aria-describedby="ppRowLabel_Web_Analytics statuslabel" id="Web_AnalyticsOff" name="Web_Analytics" tabindex="6" type="radio" value="off" /> <label for="Web_AnalyticsOff">Off</label></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+    </div>
+  </div>
+  </div>
+
+          </div>
+        
+      </div>
+    </footer>
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/40426","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorAccordion":{"accordionStyle":{"collapseAll":1,"keepRowsOpen":null}},"googleCSE":{"cx":"009227189681984140005:jm345pi0txa","key":"AIzaSyAmjvJHWdJ_lzbyca5D_s8fTgZiAsrGUB8","language":"en","resultsWidth":0,"domain":"","isDefault":true},"ajaxTrustedUrl":{"\/search\/medicare":true},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":false,"dropShadows":false},"plugins":{"smallscreen":{"mode":"window_width","title":"Main Menu"},"supposition":true,"supersubs":true}}},"ajax":[],"user":{"uid":0,"permissionsHash":"63b93d0dace5d3950280932fe73e0b1c59b7b8a9dbd6f379e144f009ad53462f"}}</script>
+<script src="/sites/default/files/js/js_jBLfFMu-qISb1fT5TO2HTv230Y1UDMdO0sXZDtziJ_o.js"></script>
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"04d273ebc4","applicationID":"160135793","transactionName":"ZgBRMRcAXxVRAENYX19KcgYRCF4IHydFREBQCW8LCgVUOnMMWUVCXglfABc9fwlUBmFYVUYmXAsRE14KXAZFHA5HDFYS","queueTime":0,"applicationTime":1333,"atts":"SkdSR18aTBs=","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/utils/ee871e140c1ti197e9cb2860fbaa3c05f']); </script><script type="text/javascript"  src="/utils/ee871e140c1ti197e9cb2860fbaa3c05f"></script></body>
+</html>

@@ -66,4 +66,4 @@ for star in mass:
   while start<end:
     download_logs(google_search[start][0],'found/'+nowtimedate+'/logs')
     start+=1
-save_results(mapl,lastres.txt)
+save_results(mapl,'lastres.txt')

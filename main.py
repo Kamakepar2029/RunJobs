@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import os
 from multiprocessing import Process
+from flask import send_file
 from kama import Kama
 app = Flask(__name__, template_folder="templates")
 
@@ -46,6 +47,12 @@ def newj():
   cp.start()
   return ('Job Started')
 
+@app.route('/download')
+def download():
+  os.system('rm my.zip')
+  os.system('zip my.zip */*/*/*/*')
+  path = "my.zip"
+  return send_file(path, as_attachment=True)
 
 if __name__ == "__main__":
   cpr = CustomProcess(3)
