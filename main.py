@@ -36,10 +36,10 @@ def index():
   end = len(projects)
   string = ''
   while start<end:
-    string = string+shablon(projects[start]).replace('"',"'")
+    string = string+shablon(projects[start])
     start+=1
-  jso = '{"runprojects":"'+count_projects+'","lastres":"'+lastres+'","allpr":"'+string+'"}'
-  return (k.render_k('index.php',jso))
+  jso = '{"runprojects":"'+count_projects+'"}'
+  return (k.render_k('index.php',jso,string))
 
 @app.route('/newjob')
 def newj():
