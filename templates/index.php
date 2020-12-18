@@ -38,7 +38,8 @@
 <div class="page-content"><div id="tab-general"><div id="sum_box" class="row mbl"><div class="col-sm-6 col-md-3"><div class="panel profit db mbm"><div class="panel-body"><p class="icon"><i class="icon fa fa-shopping-cart"></i></p><h4 class="value"><span data-counter="" data-start="10" data-end="50" data-step="1" data-duration="0">%runprojects%</span><span> Job</span></h4><p class="description">Job running</p><div class="progress progress-sm mbn"><div role="progressbar" aria-valuenow="%runprojects%" aria-valuemin="0" aria-valuemax="100" style="width: %runprojects%;" class="progress-bar progress-bar-success"><span class="sr-only">%runprojects%% Complete (success)</span></div></div></div></div>
 <h1>Projects:</h1>
 
-%allpr%
+<!------------%allpr%--------------->
+%stri%
 </div>
 
 </div>
